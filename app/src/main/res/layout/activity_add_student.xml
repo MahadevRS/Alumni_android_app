@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lighthouse"
+    tools:context=".AddStudentActivity">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="394dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/NameHint"
+            android:inputType="textPersonName"
+            android:shadowColor="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/inputText"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="@dimen/inputtextsize" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/branchHint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/inputText"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="@dimen/inputtextsize" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="creditCardExpirationYear"
+            android:ems="10"
+            android:hint="@string/graduationyearHint"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColor="@color/inputText"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="@dimen/inputtextsize" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="phone"
+            android:ems="10"
+            android:hint="@string/mobNoHint"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@color/inputText"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="@dimen/inputtextsize" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="emailAddress"
+            android:ems="10"
+            android:hint="@string/emailHint"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/inputText"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="@dimen/inputtextsize" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Submitbutton"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.376" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

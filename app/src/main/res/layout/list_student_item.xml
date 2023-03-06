@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="EditStudent">
+
+
+    <TextView
+        android:id="@+id/studentitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Student_name"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/studentitem_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Student_branch"
+        android:textColor="@color/black"
+
+        app:layout_constraintStart_toStartOf="@+id/studentitem_name"
+        app:layout_constraintTop_toBottomOf="@+id/studentitem_name" />
+
+    <TextView
+        android:id="@+id/studentitem_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Student_email"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/studentitem_branch"
+        app:layout_constraintTop_toBottomOf="@+id/studentitem_branch" />
+
+    <TextView
+        android:id="@+id/studentitem_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Student_mobile"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/studentitem_email"
+        app:layout_constraintTop_toBottomOf="@+id/studentitem_email" />
+
+    <TextView
+        android:id="@+id/studentitem_graduationyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingBottom="10dp"
+        android:text="Student_graduation_year"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/studentitem_mobile"
+        app:layout_constraintTop_toBottomOf="@+id/studentitem_mobile" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/student_itemeditbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:onClick="EditStudent"
+        android:text="Edit"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/studentitem_name" />
+
+    <Button
+        android:id="@+id/student_itemdeletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/studentitem_graduationyear"
+        app:layout_constraintEnd_toEndOf="@+id/student_itemeditbutton"
+        app:layout_constraintStart_toStartOf="@+id/student_itemeditbutton"
+        app:layout_constraintTop_toBottomOf="@+id/student_itemeditbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

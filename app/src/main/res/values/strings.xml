@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alumni</string>
+    <string name="NameHint">Name</string>
+    <string name="branchHint">Branch</string>
+    <string name="graduationyearHint">Graduation Year</string>
+    <string name="mobNoHint">Mob. no</string>
+    <string name="emailHint">Email Address</string>
+    <string name="Submitbutton">Save</string>
+</resources>
